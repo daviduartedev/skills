@@ -1,12 +1,12 @@
 # Local run
 
-Load when starting (or skipping) the consumer app for a smoke checklist.
+Load when starting (or skipping) the consumer app for a dvd-tests run.
 
 ## Start command and URL
 
 Use the first source that actually states a command or URL:
 
-1. The user, in this conversation
+1. The _window_ (this conversation)
 2. Cycle `request.md` (URL, port, how to start)
 3. The smoke section of `plan.md`
 4. The consumer's documented dev script (`package.json` `scripts`, Makefile, README)
@@ -21,4 +21,4 @@ Leave a healthy server on the right branch running. Stop a stale process on the 
 
 ## Credentials
 
-Print login profiles only when `request.md` or the user stated them. Ask when a role is required and no profile is recorded. Never invent a password or a default user.
+Print login profiles only when the _window_ or `request.md` stated them. Ask when a role is required and no profile is recorded. Never invent a password or a default user.

@@ -1,6 +1,6 @@
 # sdd-security-skills / daviduartedev skills
 
-Composable Agent Skills for spec-driven work: an AppSec pair, a plain-language companion for that pair, plus a human smoke gate after implement. The published GitHub repository is `daviduartedev/skills`.
+Composable Agent Skills for spec-driven work: an AppSec pair, a plain-language companion for that pair, plus a delivery gate after implement (`dvd-tests`: Drive, Verify, Deliver). The published GitHub repository is `daviduartedev/skills`.
 
 ## Language
 
@@ -20,9 +20,13 @@ _Avoid_: fourth AppSec review, course, rewrite of the AppSec file
 The derived file `docs/security/<feature-slug>-explained.md`.
 _Avoid_: source of truth, `SEC-*` register, AppSec review
 
-**smoke-test-list**:
-Human-observable smoke checklist of a completed implementation, after a local run on a free port.
-_Avoid_: automated test suite, AppSec findings, commit on the agent's initiative
+**dvd-tests**:
+Delivery gate after implement: local run, browser Drive, printed E2E results, then an unchecked human-observable smoke checklist.
+_Avoid_: committed Playwright spec unless asked, AppSec findings, commit on the agent's initiative, invented logins
+
+**window**:
+This conversation: URL, login, product, and out-of-scope the human already stated.
+_Avoid_: inventing a profile the window and cycle docs do not name
 
 **description**:
 The YAML `Use when` pointer that fires a published skill.

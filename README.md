@@ -23,7 +23,7 @@ They are a pair: design review produces requirements; implementation review chec
 
 Work that puts the change in front of a human before it is treated as done.
 
-- **[smoke-test-list](./skills/smoke-test-list/SKILL.md)**: Run **after implement**, before commits. Starts the implementation branch locally on a **free port** when a UI exists, prints an unchecked checklist of what you can see or do (including a relevant negative check), and waits. Login profiles come from your docs or from you, never invented. This run does not commit. [Human guide](docs/engineering/smoke-test-list.md)
+- **[dvd-tests](./skills/dvd-tests/SKILL.md)**: Run **after implement**, before commits. Starts the implementation branch locally on a **free port** when a UI exists, **Drives** that UI in a browser, prints E2E results, then an unchecked checklist of what you can see or do (including a relevant negative check), and waits. Login profiles come from your docs or from you, never invented. This run does not commit. Former name: `smoke-test-list`. [Human guide](docs/engineering/dvd-tests.md)
 
 Everything in this collection is **model-invoked**: you can type the name, or the agent can reach for it when the slot matches.
 

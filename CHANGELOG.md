@@ -2,6 +2,10 @@
 
 All notable changes to this collection are documented here.
 
+## [0.4.0] - 2026-09-17
+
+- **dvd-tests** replaces **smoke-test-list**: same human smoke gate (local run on a free port, unchecked observable checklist, no invented logins), plus a browser Drive against that URL and printed E2E results. Invoke as `dvd-tests`. See [ADR-0003](docs/adr/0003-dvd-tests.md).
+
 ## [0.3.0] - 2026-09-09
 
 - **teach-me-sec**: working-literacy companion of `security-design-review` and `security-review`. Writes `docs/security/<feature-slug>-explained.md` (en-UK) and a conversation copy in the teaching language. No new findings. The AppSec pair points here when the human asks for a non-specialist explanation; those reviews stay done without it.

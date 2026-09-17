@@ -210,7 +210,7 @@ def main() -> int:
         "security-design-review",
         "security-review",
         "teach-me-sec",
-        "smoke-test-list",
+        "dvd-tests",
     )
     published = published_skill_names()
     for name in expected:

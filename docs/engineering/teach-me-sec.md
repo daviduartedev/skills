@@ -12,7 +12,7 @@ The AppSec artifact remains the source of truth. This skill copies no new `THREA
 
 When you want a non-specialist explanation of a review that already exists, or of one you are willing to have run first. The skill is model-invoked (the agent can notice that ask from its description). You can also invoke it by name. The AppSec pair can point here when you ask for an explanation; those reviews are still done without this companion.
 
-Skip it when you are the AppSec reader of the original file, or when the work is a smoke check (`smoke-test-list`).
+Skip it when you are the AppSec reader of the original file, or when the work is a smoke check (`dvd-tests`).
 
 ## Input
 
@@ -60,5 +60,5 @@ The conversation copy uses the teaching language you chose; the file stays en-UK
 - Rewriting or replacing `docs/security/<feature-slug>.md`
 - A security course, or teaching in the absence of a review you declined to run
 - Implementation steps, diffs, or a patch plan
-- Smoke checks (`smoke-test-list`)
+- Smoke checks (`dvd-tests`)
 - Reproducing OWASP ASVS requirement bodies

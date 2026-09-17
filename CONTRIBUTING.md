@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is a **four-skill** Agent Skills collection: `security-design-review`, `security-review`, `teach-me-sec`, and `smoke-test-list`. Propose changes against that product, not a larger platform.
+This repository is a **four-skill** Agent Skills collection: `security-design-review`, `security-review`, `teach-me-sec`, and `dvd-tests`. Propose changes against that product, not a larger platform.
 
 ## Propose a change
 
