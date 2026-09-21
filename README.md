@@ -24,7 +24,7 @@ They are a pair: design review produces requirements; implementation review chec
 Work that puts the change in front of a human before it is treated as done.
 
 - **[dvd-tests](./skills/dvd-tests/SKILL.md)**: Run **after implement**, before commits. Starts the implementation branch locally on a **free port** when a UI exists, **Drives** that UI in a browser, prints E2E results, then an unchecked checklist of what you can see or do (including a relevant negative check), and waits. Login profiles come from your docs or from you, never invented. This run does not commit. Former name: `smoke-test-list`. [Human guide](docs/engineering/dvd-tests.md)
-- **[pr-screenshots](./skills/pr-screenshots/SKILL.md)**: Run **when opening the PR** for a visible change. Captures native screenshots, drafts captions against the ticket, and puts the images **only in the GitHub PR description**. Never commits an `assets/` folder (or any screenshot path) on the implementation branch. You drag the named files into the description in the GitHub UI. [Human guide](docs/engineering/pr-screenshots.md)
+- **[pr-screenshots](./skills/pr-screenshots/SKILL.md)**: Run **when opening the PR** for a visible change. Captures native screenshots, drafts captions against the ticket, uploads them to GitHub, and puts the URLs **only in the PR description**. Never commits an `assets/` folder (or any screenshot path) on the implementation branch. [Human guide](docs/engineering/pr-screenshots.md)
 
 Everything in this collection is **model-invoked**: you can type the name, or the agent can reach for it when the slot matches.
 

@@ -26,7 +26,7 @@ Before/after when both files exist:
 <img src="" width="360" alt="complete lockup">
 ```
 
-Leave `src` empty in the draft the agent writes. The human drop in the GitHub UI fills it with `user-images.githubusercontent.com` (or `private-user-images`) URLs. Those are the URLs that render on a **private** repository.
+Fill `src` with the URL returned by the upload below. That URL is `https://github.com/user-attachments/assets/<uuid>`. On a private repository it renders for someone who can open the PR. An anonymous fetch of the same URL is a 404; that is expected.
 
 ## What not to put in `src`
 
@@ -35,12 +35,17 @@ Leave `src` empty in the draft the agent writes. The human drop in the GitHub UI
 - Repo-relative paths (`docs/foo.png`) — they do not resolve in a PR description
 - A branch named `pr-assets`, `assets/`, or any folder of screenshots on the consumer git remote
 
-## Human drop
+## Upload
 
-After `gh pr create` (or equivalent), print:
+After the PR exists, upload each file. Do not print the token.
 
-> Drop these files into the PR description on GitHub, matching by filename:
-> - `01-….png` — \<caption\>
-> - …
+1. Repository id: `gh api repos/<owner>/<repo> --jq .id`
+2. Token: `gh auth token` (OAuth, classic PAT, or fine-grained PAT with write). GitHub Enterprise Server does not serve this endpoint.
+3. `POST https://uploads.github.com/user-attachments/assets?name=<filename>&content_type=image/png&repository_id=<id>`
+   - `Authorization: Bearer <token>`
+   - `Accept: application/vnd.github+json`
+   - `Content-Type: application/octet-stream`
+   - Body: the file bytes
+4. A 201 body has `url`. Put that URL in `src`. Then `PATCH` the pull request body (`gh api repos/<owner>/<repo>/pulls/<n> -X PATCH` with a UTF-8 JSON `{"body": …}`).
 
-The GitHub API cannot upload those binaries into the body. That is why the drop is the human's.
+A 404 from that POST means the token cannot write. Then, and only then, list the local filenames and ask the human to drop them in the GitHub description.

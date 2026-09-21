@@ -4,7 +4,7 @@ All notable changes to this collection are documented here.
 
 ## [0.5.0] - 2026-09-21
 
-- **pr-screenshots**: after a visible change is ready for review, capture native screenshots and put them only in the GitHub PR description. Never commit an `assets/` folder (or `pr-assets` orphan branch) on the implementation PR. GitHub has no public upload API; the human drops the named files in the GitHub UI. Pairs with `dvd-tests`. See [ADR-0004](docs/adr/0004-pr-screenshots.md).
+- **pr-screenshots**: after a visible change is ready for review, capture native screenshots and put them only in the GitHub PR description via `uploads.github.com` user-attachments. Never commit an `assets/` folder (or `pr-assets` orphan branch) on the implementation PR. A human drop is only the fallback when the upload is refused. Pairs with `dvd-tests`. See [ADR-0004](docs/adr/0004-pr-screenshots.md).
 
 ## [0.4.0] - 2026-09-17
 

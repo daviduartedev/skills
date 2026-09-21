@@ -26,7 +26,7 @@ _Avoid_: committed Playwright spec unless asked, AppSec findings, commit on the 
 
 **pr-screenshots**:
 UI evidence for a pull request: native screenshots, captions, images only in the GitHub PR description.
-_Avoid_: committing `assets/` or `pr-assets`, `raw.githubusercontent.com` on a private repo, Azure DevOps upload paths
+_Avoid_: committing `assets/` or `pr-assets`, `raw.githubusercontent.com` on a private repo, asking the human to drag files when the upload endpoint accepts them
 
 **window**:
 This conversation: URL, login, product, and out-of-scope the human already stated.

@@ -17,9 +17,9 @@ Sits after `dvd-tests` (human has confirmed the UI) and next to opening the PR. 
 
 3. Save files **outside the consumer working tree** that will be pushed. Print the absolute folder and the filename list. Never `git add` those files. Never create `assets/`, `pr-assets/`, `docs/pr-evidence/`, or an orphan branch of screenshots on the consumer repository.
 
-4. **Caption** and **Place.** Load [github-description](references/github-description.md). Draft the evidence section; images live only in the GitHub PR description. After the PR exists, list each local filename with its caption and ask the human to drag those files into the description in the GitHub UI, matching by name.
+4. **Caption** and **Place.** Load [github-description](references/github-description.md). Draft the evidence section, upload each file to GitHub user-attachments for that repository, and write the returned URLs into the PR description. Images stay out of the implementation diff.
 
-5. Print the filename list in the conversation. Stop. The human drops the files; this skill does not commit.
+5. Print the filename list and the PR URL. Stop. This skill does not commit the screenshots.
 
 ## Output
 
@@ -27,7 +27,7 @@ Primary: the conversation, then the PR description evidence section.
 
 1. Absolute folder of the PNG/JPEG files
 2. A table or list: filename, caption, ticket criterion when one exists
-3. The markdown block for **Evidências** / Evidence, with image alts filled and `src` left for the human drop (or already filled if they pasted)
+3. The markdown block for **Evidências** / Evidence, with each `src` set to the uploaded `github.com/user-attachments/assets/…` URL
 
 This run does not commit, force-push, or open a pull request unless a sibling PR skill in the same session already owns that step — and even then it still does not add image files to the diff.
 
@@ -38,6 +38,6 @@ The run is done when all of the following hold:
 - The change is visible, or the run stopped because it is not
 - Screenshots exist on disk outside the pushed working tree
 - No screenshot path is staged, committed, or present in the PR diff
-- The PR description draft names every file and what to notice
-- The human has been asked to drop the files into the GitHub description, matching by filename
+- The PR description names every file, what to notice, and a `user-attachments` URL for each image
+- If the upload was refused, the conversation says so and lists the local filenames for a human drop
 - The conversation states that the implementation branch stays free of an `assets/` (or equivalent) screenshot folder

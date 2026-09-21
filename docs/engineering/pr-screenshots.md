@@ -6,7 +6,7 @@ Invoke as **pr-screenshots** (`/pr-screenshots`).
 
 ## What it does
 
-The skill walks an agent through capturing native screenshots of a visible change and drafting the evidence section of the GitHub PR description. The image files stay on disk outside the branch. You drag them into the description in the GitHub UI.
+The skill walks an agent through capturing native screenshots of a visible change and putting them in the GitHub PR description. The agent uploads each file to GitHub (`user-attachments`) and writes those URLs into the description. The files stay off the implementation branch.
 
 It does not commit those files, and it does not add an `assets/` folder to the pull request.
 
@@ -28,9 +28,9 @@ Whatever already exists for the change:
 
 1. A folder of PNG/JPEG files (absolute path in the conversation)
 2. A filename + caption list
-3. Markdown for the PR evidence section, with empty `src` waiting for your drop
+3. The PR description, with each image pointing at `github.com/user-attachments/assets/…`
 
-You open the PR on GitHub and drop each file onto the matching caption. GitHub stores those uploads on `user-images.githubusercontent.com`, which is what actually renders on a private repo.
+Refresh the pull request while logged in. On a private repository those URLs 404 if fetched without a session; they render for anyone who can open the PR.
 
 ## Non-goals
 
