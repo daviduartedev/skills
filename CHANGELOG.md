@@ -2,6 +2,10 @@
 
 All notable changes to this collection are documented here.
 
+## [0.5.0] - 2026-09-21
+
+- **pr-screenshots**: after a visible change is ready for review, capture native screenshots and put them only in the GitHub PR description via `uploads.github.com` user-attachments. Never commit an `assets/` folder (or `pr-assets` orphan branch) on the implementation PR. A human drop is only the fallback when the upload is refused. Pairs with `dvd-tests`. See [ADR-0004](docs/adr/0004-pr-screenshots.md).
+
 ## [0.4.0] - 2026-09-17
 
 - **dvd-tests** replaces **smoke-test-list**: same human smoke gate (local run on a free port, unchecked observable checklist, no invented logins), plus a browser Drive against that URL and printed E2E results. Invoke as `dvd-tests`. See [ADR-0003](docs/adr/0003-dvd-tests.md).

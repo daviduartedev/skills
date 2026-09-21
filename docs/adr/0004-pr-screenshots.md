@@ -1,0 +1,3 @@
+# Screenshots belong in the PR description, not on the branch
+
+The published GitHub repo is `daviduartedev/skills`. A fifth published skill, **pr-screenshots**, captures UI evidence for a pull request. Image files must not land in the implementation diff (`assets/`, `pr-assets/`, or similar). The agent uploads them with `POST https://uploads.github.com/user-attachments/assets` and writes the returned URLs into the description. That is what renders for someone who can open a private pull request. A human drop in the GitHub UI is only the fallback when that upload is refused. Scanners and SDD orchestrators stay out.

@@ -3,3 +3,5 @@ Original content in this repository is licensed under the MIT License. See LICEN
 OWASP Application Security Verification Standard (ASVS) 5.0.0 is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). This project refers to ASVS 5.0.0 as a verification framework and does not copy ASVS requirement bodies. Use of ASVS does not imply endorsement by OWASP.
 
 This project is not affiliated with or endorsed by Matt Pocock.
+
+The **pr-screenshots** skill is original collection text. It was inspired by the MIT-licensed `pr-screenshots` skill in [github/awesome-copilot](https://github.com/github/awesome-copilot). This project is not affiliated with or endorsed by GitHub.
