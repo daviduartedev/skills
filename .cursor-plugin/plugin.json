@@ -1,8 +1,8 @@
 {
   "name": "daviduartedev-skills",
   "displayName": "World's Okayest Software Developer",
-  "description": "Agent Skills for AppSec in spec-driven development (OWASP ASVS 5.0.0 by relevance), a plain-language companion for those reviews, and a delivery gate after implement (browser E2E plus a human smoke checklist)",
-  "version": "0.4.0",
+  "description": "Agent Skills for AppSec in spec-driven development (OWASP ASVS 5.0.0 by relevance), a plain-language companion for those reviews, and a delivery gate after implement (browser E2E, a human smoke checklist, and PR-description screenshots)",
+  "version": "0.5.0",
   "author": {
     "name": "daviduartedev"
   },

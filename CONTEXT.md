@@ -1,6 +1,6 @@
 # sdd-security-skills / daviduartedev skills
 
-Composable Agent Skills for spec-driven work: an AppSec pair, a plain-language companion for that pair, plus a delivery gate after implement (`dvd-tests`: Drive, Verify, Deliver). The published GitHub repository is `daviduartedev/skills`.
+Composable Agent Skills for spec-driven work: an AppSec pair, a plain-language companion for that pair, plus a delivery gate after implement (`dvd-tests`: Drive, Verify, Deliver) and PR-description screenshots (`pr-screenshots`). The published GitHub repository is `daviduartedev/skills`.
 
 ## Language
 
@@ -23,6 +23,10 @@ _Avoid_: source of truth, `SEC-*` register, AppSec review
 **dvd-tests**:
 Delivery gate after implement: local run, browser Drive, printed E2E results, then an unchecked human-observable smoke checklist.
 _Avoid_: committed Playwright spec unless asked, AppSec findings, commit on the agent's initiative, invented logins
+
+**pr-screenshots**:
+UI evidence for a pull request: native screenshots, captions, images only in the GitHub PR description.
+_Avoid_: committing `assets/` or `pr-assets`, `raw.githubusercontent.com` on a private repo, Azure DevOps upload paths
 
 **window**:
 This conversation: URL, login, product, and out-of-scope the human already stated.

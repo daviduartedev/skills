@@ -41,6 +41,8 @@ Two conversation blocks:
 
 You work the list. When it holds, you ask for commits in a later message. That confirmation is yours; this skill never commits.
 
+Visible UI changes that still need evidence on the pull request: run **pr-screenshots** after you confirm. That skill puts native screenshots in the GitHub PR description and does not add an `assets/` folder to the branch.
+
 ## Non-goals
 
 - Implementation, AppSec review, or opening a pull request
