@@ -2,11 +2,11 @@
 
 # Skills BY: World's Okayest Software Developer (It's a joke)
 
-Four agent skills I actually run. Small, composable, and meant to sit in a spec-driven loop rather than replace it. They work with any model. Fork them. Make them yours.
+Five agent skills I actually run. Small, composable, and meant to sit in a spec-driven loop rather than replace it. They work with any model. Fork them. Make them yours.
 
 ## The skills
 
-Four skills, two categories. Agent process lives in `skills/<name>/SKILL.md`. This README does not repeat it.
+Five skills, three categories. Agent process lives in `skills/<name>/SKILL.md`. This README does not repeat it.
 
 ### Security
 
@@ -25,6 +25,12 @@ Work that puts the change in front of a human before it is treated as done.
 
 - **[dvd-tests](./skills/dvd-tests/SKILL.md)**: Run **after implement**, before commits. Starts the implementation branch locally on a **free port** when a UI exists, **Drives** that UI in a browser, prints E2E results, then an unchecked checklist of what you can see or do (including a relevant negative check), and waits. Login profiles come from your docs or from you, never invented. This run does not commit. Former name: `smoke-test-list`. [Human guide](docs/engineering/dvd-tests.md)
 
+### Batch
+
+Work that lands several small adjustments on one branch and reaches the skills above at their slots.
+
+- **[esteira](./skills/esteira/SKILL.md)**: Run **when a message lists several small adjustments**. Cuts one `feat/<slug>` branch and holds the conversation through shared understanding, the spec, and the tickets. Each ticket is implemented in a fresh context. `security-design-review` runs before the spec is published; `security-review` and `dvd-tests` run after the commits. A large module, greenfield work, or a single obvious change is outside it. [Human guide](docs/engineering/esteira.md)
+
 Everything in this collection is **model-invoked**: you can type the name, or the agent can reach for it when the slot matches.
 
 ## Installation
@@ -41,7 +47,7 @@ The plugin lives in [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json). 
 npx skills add daviduartedev/skills --all
 ```
 
-`npx skills add daviduartedev/skills` also works; `--all` installs all four skills without picking them one by one.
+`npx skills add daviduartedev/skills` also works; `--all` installs all five skills without picking them one by one.
 
 **For tinkerers**
 

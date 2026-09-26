@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is a **four-skill** Agent Skills collection: `security-design-review`, `security-review`, `teach-me-sec`, and `dvd-tests`. Propose changes against that product, not a larger platform.
+This repository is a **five-skill** Agent Skills collection: `security-design-review`, `security-review`, `teach-me-sec`, `dvd-tests`, and `esteira`. Propose changes against that product, not a larger platform.
 
 ## Propose a change
 
@@ -16,8 +16,8 @@ In scope: the published skills, shared ASVS *applicability* mapping, plugin mani
 
 Out of scope without a new spec:
 
-- Additional skills beyond the four published here
-- An SDD orchestrator or wrapper around specify / ticket / implement
+- Additional skills beyond the five published here
+- A general specify/implement platform (`esteira` is the batch lane for small adjustments, not that platform)
 - Scanners, CLIs, or SaaS
 - Evaluation fixtures, true/false-positive suites, or a test harness for agent reasoning
 
