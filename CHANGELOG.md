@@ -2,6 +2,10 @@
 
 All notable changes to this collection are documented here.
 
+## [0.5.0] - 2026-09-26
+
+- **esteira**: a batch of small adjustments on one `feat/<slug>` branch. Shared understanding, the spec, and the tickets are written in this collection. Each ticket is implemented in a fresh context with its own commit. `security-design-review` runs before the spec is published, `security-review` runs on the branch, and `dvd-tests` runs last without committing. Push waits for the human checklist. See [ADR-0004](docs/adr/0004-esteira.md).
+
 ## [0.4.0] - 2026-09-17
 
 - **dvd-tests** replaces **smoke-test-list**: same human smoke gate (local run on a free port, unchecked observable checklist, no invented logins), plus a browser Drive against that URL and printed E2E results. Invoke as `dvd-tests`. See [ADR-0003](docs/adr/0003-dvd-tests.md).
