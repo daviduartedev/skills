@@ -1,6 +1,6 @@
 # sdd-security-skills / daviduartedev skills
 
-Composable Agent Skills for spec-driven work: an AppSec pair, a plain-language companion for that pair, plus a delivery gate after implement (`dvd-tests`: Drive, Verify, Deliver). The published GitHub repository is `daviduartedev/skills`.
+Composable Agent Skills for spec-driven work: an AppSec pair, a plain-language companion for that pair, a delivery gate after implement (`dvd-tests`: Drive, Verify, Deliver), and a read-only orientation trio (`explain-product`, `explain-code`, `explain-infra`). The published GitHub repository is `daviduartedev/skills`.
 
 ## Language
 
@@ -23,6 +23,18 @@ _Avoid_: source of truth, `SEC-*` register, AppSec review
 **dvd-tests**:
 Delivery gate after implement: local run, browser Drive, printed E2E results, then an unchecked human-observable smoke checklist.
 _Avoid_: committed Playwright spec unless asked, AppSec findings, commit on the agent's initiative, invented logins
+
+**explain-product**:
+Read-only orientation of a consumer module from existing product docs: decided rules versus open questions.
+_Avoid_: inventing a scoring rule, implementing, AppSec
+
+**explain-code**:
+Read-only orientation of a consumer module as code: public seam, call path, tests that lock it.
+_Avoid_: a refactor, a product glossary lecture
+
+**explain-infra**:
+Read-only orientation of where the consumer product runs: hosts, deploy path, secret names.
+_Avoid_: pasting secret values, guessing topology after a failed login
 
 **window**:
 This conversation: URL, login, product, and out-of-scope the human already stated.

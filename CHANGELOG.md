@@ -2,6 +2,10 @@
 
 All notable changes to this collection are documented here.
 
+## [0.5.0] - 2026-10-08
+
+- **explain-product**, **explain-code**, and **explain-infra**: read-only orientation trio for a consumer module (product docs and open questions; implementation seams and tests; hosting and local run). See [ADR-0004](docs/adr/0004-explain-literacy.md).
+
 ## [0.4.0] - 2026-09-17
 
 - **dvd-tests** replaces **smoke-test-list**: same human smoke gate (local run on a free port, unchecked observable checklist, no invented logins), plus a browser Drive against that URL and printed E2E results. Invoke as `dvd-tests`. See [ADR-0003](docs/adr/0003-dvd-tests.md).

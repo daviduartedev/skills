@@ -2,11 +2,11 @@
 
 # Skills BY: World's Okayest Software Developer (It's a joke)
 
-Four agent skills I actually run. Small, composable, and meant to sit in a spec-driven loop rather than replace it. They work with any model. Fork them. Make them yours.
+Seven agent skills I actually run. Small, composable, and meant to sit in a spec-driven loop rather than replace it. They work with any model. Fork them. Make them yours.
 
 ## The skills
 
-Four skills, two categories. Agent process lives in `skills/<name>/SKILL.md`. This README does not repeat it.
+Seven skills, three categories. Agent process lives in `skills/<name>/SKILL.md`. This README does not repeat it.
 
 ### Security
 
@@ -25,6 +25,16 @@ Work that puts the change in front of a human before it is treated as done.
 
 - **[dvd-tests](./skills/dvd-tests/SKILL.md)**: Run **after implement**, before commits. Starts the implementation branch locally on a **free port** when a UI exists, **Drives** that UI in a browser, prints E2E results, then an unchecked checklist of what you can see or do (including a relevant negative check), and waits. Login profiles come from your docs or from you, never invented. This run does not commit. Former name: `smoke-test-list`. [Human guide](docs/engineering/dvd-tests.md)
 
+### Orientation
+
+Work that recovers what the consumer repo already knows when domain, code, or hosting is foggy.
+
+- **[explain-product](./skills/explain-product/SKILL.md)**: Run **when you lack product domain** for a module. Grounds in glossary, ADRs, specs, issues, and maps; prints **decided** versus **open**. [Human guide](docs/engineering/explain-product.md)
+- **[explain-code](./skills/explain-code/SKILL.md)**: Run **when you need how a module is implemented**. Follows the public seam, the call path, and the tests that lock it. [Human guide](docs/engineering/explain-code.md)
+- **[explain-infra](./skills/explain-infra/SKILL.md)**: Run **when you need how this product is hosted, deployed, or run locally**. Env and secret **names** only. [Human guide](docs/engineering/explain-infra.md)
+
+They are a trio: product rules, application seams, runtime. Each run is read-only.
+
 Everything in this collection is **model-invoked**: you can type the name, or the agent can reach for it when the slot matches.
 
 ## Installation
@@ -41,7 +51,7 @@ The plugin lives in [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json). 
 npx skills add daviduartedev/skills --all
 ```
 
-`npx skills add daviduartedev/skills` also works; `--all` installs all four skills without picking them one by one.
+`npx skills add daviduartedev/skills` also works; `--all` installs all seven skills without picking them one by one.
 
 **For tinkerers**
 
