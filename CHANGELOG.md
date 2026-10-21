@@ -2,6 +2,10 @@
 
 All notable changes to this collection are documented here.
 
+## [0.6.0] - 2026-10-21
+
+- **questionario-competencias**: locked record of the IKOA Questionário de competências (who answers, once-only Meu mapa seal, mean-to-bar formula, open lines). See the skill and [human guide](docs/engineering/questionario-competencias.md).
+
 ## [0.5.0] - 2026-10-08
 
 - **explain-product**, **explain-code**, and **explain-infra**: read-only orientation trio for a consumer module (product docs and open questions; implementation seams and tests; hosting and local run). See [ADR-0004](docs/adr/0004-explain-literacy.md).
