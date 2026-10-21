@@ -2,11 +2,11 @@
 
 # Skills BY: World's Okayest Software Developer (It's a joke)
 
-Seven agent skills I actually run. Small, composable, and meant to sit in a spec-driven loop rather than replace it. They work with any model. Fork them. Make them yours.
+Eight agent skills I actually run. Small, composable, and meant to sit in a spec-driven loop rather than replace it. They work with any model. Fork them. Make them yours.
 
 ## The skills
 
-Seven skills, three categories. Agent process lives in `skills/<name>/SKILL.md`. This README does not repeat it.
+Eight skills, four categories. Agent process lives in `skills/<name>/SKILL.md`. This README does not repeat it.
 
 ### Security
 
@@ -35,6 +35,12 @@ Work that recovers what the consumer repo already knows when domain, code, or ho
 
 They are a trio: product rules, application seams, runtime. Each run is read-only.
 
+### Domain
+
+A locked record for one consumer module, so later work does not reopen a closed rule.
+
+- **[questionario-competencias](./skills/questionario-competencias/SKILL.md)**: Run **when changing** the IKOA Questionário de competências, its average bar, the Meu mapa seal, or Meu desenvolvimento. Holds who answers, the once-only seal, the mean-to-bar formula, and the lines still open. [Human guide](docs/engineering/questionario-competencias.md)
+
 Everything in this collection is **model-invoked**: you can type the name, or the agent can reach for it when the slot matches.
 
 ## Installation
@@ -51,7 +57,7 @@ The plugin lives in [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json). 
 npx skills add daviduartedev/skills --all
 ```
 
-`npx skills add daviduartedev/skills` also works; `--all` installs all seven skills without picking them one by one.
+`npx skills add daviduartedev/skills` also works; `--all` installs all eight skills without picking them one by one.
 
 **For tinkerers**
 

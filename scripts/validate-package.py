@@ -214,6 +214,7 @@ def main() -> int:
         "explain-product",
         "explain-code",
         "explain-infra",
+        "questionario-competencias",
     )
     published = published_skill_names()
     for name in expected:
