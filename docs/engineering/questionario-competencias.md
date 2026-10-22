@@ -10,7 +10,7 @@ The skill holds the closed rules for Questionário A: who answers, when the Meu 
 
 ## When to run it
 
-When a change touches the questionnaire, the average bar, the Meu mapa seal, or Meu desenvolvimento. The agent can notice that slot from the skill description. You can also invoke it by name.
+When a change touches the questionnaire, the average bar, the Meu mapa seal, Meu desenvolvimento, or the school switch in Configurações. The agent can notice that slot from the skill description. You can also invoke it by name.
 
 Skip it for a general product read (`explain-product`) or for trail work, which stays off `feat/questionario-a`.
 
