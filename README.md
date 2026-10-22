@@ -39,7 +39,7 @@ They are a trio: product rules, application seams, runtime. Each run is read-onl
 
 A locked record for one consumer module, so later work does not reopen a closed rule.
 
-- **[questionario-competencias](./skills/questionario-competencias/SKILL.md)**: Run **when changing** the IKOA Questionário de competências, its average bar, the Meu mapa seal, or Meu desenvolvimento. Holds who answers, the once-only seal, the mean-to-bar formula, and the lines still open. [Human guide](docs/engineering/questionario-competencias.md)
+- **[questionario-competencias](./skills/questionario-competencias/SKILL.md)**: Run **when changing** the IKOA Questionário de competências, its average bar, the Meu mapa seal, Meu desenvolvimento, or the school switch in Configurações. Holds who answers, the once-only seal, the mean-to-bar formula, and the lines still open. [Human guide](docs/engineering/questionario-competencias.md)
 
 Everything in this collection is **model-invoked**: you can type the name, or the agent can reach for it when the slot matches.
 

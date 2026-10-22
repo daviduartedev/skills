@@ -2,6 +2,10 @@
 
 All notable changes to this collection are documented here.
 
+## [0.6.1] - 2026-10-22
+
+- **questionario-competencias**: the school switch `questionnaireEnabled` defaults off; only `admin_escola` turns **Questionário de competências** on in Configurações. Off refuses reading and answering, and keeps the reminder, the routes, and the student seal out of sight; pontos already in Ranking stay. Accordion, purple answer, and visible seal stay in Decided.
+
 ## [0.6.0] - 2026-10-21
 
 - **questionario-competencias**: locked record of the IKOA Questionário de competências (who answers, once-only Meu mapa seal, mean-to-bar formula, open lines). See the skill and [human guide](docs/engineering/questionario-competencias.md).
