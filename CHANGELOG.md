@@ -2,6 +2,10 @@
 
 All notable changes to this collection are documented here.
 
+## [0.7.0] - 2026-11-05
+
+- **grill-to-ship**: user-invoked runner at the end of a grill. Chains `to-spec`, `to-tickets`, `prototype` approval per screen, `implement` with one commit per ticket, and `dvd-tests`, cut thin and gated by the human. See [ADR-0005](docs/adr/0005-grill-to-ship.md) and the [human guide](docs/engineering/grill-to-ship.md).
+
 ## [0.6.0] - 2026-10-21
 
 - **questionario-competencias**: locked record of the IKOA Questionário de competências (who answers, once-only Meu mapa seal, mean-to-bar formula, open lines). See the skill and [human guide](docs/engineering/questionario-competencias.md).

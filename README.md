@@ -2,11 +2,11 @@
 
 # Skills BY: World's Okayest Software Developer (It's a joke)
 
-Eight agent skills I actually run. Small, composable, and meant to sit in a spec-driven loop rather than replace it. They work with any model. Fork them. Make them yours.
+Nine agent skills I actually run. Small, composable, and meant to sit in a spec-driven loop rather than replace it. They work with any model. Fork them. Make them yours.
 
 ## The skills
 
-Eight skills, four categories. Agent process lives in `skills/<name>/SKILL.md`. This README does not repeat it.
+Nine skills, four categories. Agent process lives in `skills/<name>/SKILL.md`. This README does not repeat it.
 
 ### Security
 
@@ -21,7 +21,9 @@ They are a pair: design review produces requirements; implementation review chec
 
 ### Delivery
 
-Work that puts the change in front of a human before it is treated as done.
+Work that carries settled decisions to a change and puts it in front of a human before it is treated as done.
+
+- **[grill-to-ship](./skills/grill-to-ship/SKILL.md)**: Run **at the end of a grill**, by hand. Carries the settled decisions through `to-spec`, `to-tickets`, a `prototype` of each screen you approve, `implement` with one commit per ticket, and `dvd-tests`. Everything is cut thin: one decision per story, one behaviour per ticket. It waits for you at every gate and never pushes on its own. [Human guide](docs/engineering/grill-to-ship.md)
 
 - **[dvd-tests](./skills/dvd-tests/SKILL.md)**: Run **after implement**, before commits. Starts the implementation branch locally on a **free port** when a UI exists, **Drives** that UI in a browser, prints E2E results, then an unchecked checklist of what you can see or do (including a relevant negative check), and waits. Login profiles come from your docs or from you, never invented. This run does not commit. Former name: `smoke-test-list`. [Human guide](docs/engineering/dvd-tests.md)
 
@@ -41,7 +43,7 @@ A locked record for one consumer module, so later work does not reopen a closed 
 
 - **[questionario-competencias](./skills/questionario-competencias/SKILL.md)**: Run **when changing** the IKOA Questionário de competências, its average bar, the Meu mapa seal, or Meu desenvolvimento. Holds who answers, the once-only seal, the mean-to-bar formula, and the lines still open. [Human guide](docs/engineering/questionario-competencias.md)
 
-Everything in this collection is **model-invoked**: you can type the name, or the agent can reach for it when the slot matches.
+Everything in this collection is **model-invoked** except `grill-to-ship`: you can type the name, or the agent can reach for it when the slot matches. `grill-to-ship` runs only when you type it.
 
 ## Installation
 
@@ -57,7 +59,7 @@ The plugin lives in [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json). 
 npx skills add daviduartedev/skills --all
 ```
 
-`npx skills add daviduartedev/skills` also works; `--all` installs all eight skills without picking them one by one.
+`npx skills add daviduartedev/skills` also works; `--all` installs all nine skills without picking them one by one.
 
 **For tinkerers**
 

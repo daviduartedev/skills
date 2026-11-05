@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is an **eight-skill** Agent Skills collection: `security-design-review`, `security-review`, `teach-me-sec`, `dvd-tests`, `explain-product`, `explain-code`, `explain-infra`, and `questionario-competencias`. Propose changes against that product, not a larger platform.
+This repository is a **nine-skill** Agent Skills collection: `security-design-review`, `security-review`, `teach-me-sec`, `grill-to-ship`, `dvd-tests`, `explain-product`, `explain-code`, `explain-infra`, and `questionario-competencias`. Propose changes against that product, not a larger platform.
 
 ## Propose a change
 
@@ -8,7 +8,7 @@ This repository is an **eight-skill** Agent Skills collection: `security-design-
 2. Wait for the issue to be specified before sending a pull request, unless the change is a small doc or validation fix.
 3. Keep original collection text in English (en-UK). Do not paste OWASP ASVS requirement bodies; cite versioned IDs (`v5.0.0-X.X.X`) only.
 
-Further skills, orchestrators, scanners, or an evaluation harness need a new spec, not a drive-by PR.
+Further skills, orchestrators beyond `grill-to-ship`, scanners, or an evaluation harness need a new spec, not a drive-by PR.
 
 ## Scope of this collection
 
@@ -16,8 +16,8 @@ In scope: the published skills, shared ASVS *applicability* mapping, plugin mani
 
 Out of scope without a new spec:
 
-- Additional skills beyond the eight published here
-- An SDD orchestrator or wrapper around specify / ticket / implement
+- Additional skills beyond the nine published here
+- A second SDD orchestrator beside `grill-to-ship` ([ADR-0005](docs/adr/0005-grill-to-ship.md))
 - Scanners, CLIs, or SaaS
 - Evaluation fixtures, true/false-positive suites, or a test harness for agent reasoning
 
