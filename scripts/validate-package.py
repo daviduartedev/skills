@@ -210,6 +210,7 @@ def main() -> int:
         "security-design-review",
         "security-review",
         "teach-me-sec",
+        "grill-to-ship",
         "dvd-tests",
         "explain-product",
         "explain-code",

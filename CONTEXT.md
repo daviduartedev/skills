@@ -1,6 +1,6 @@
 # sdd-security-skills / daviduartedev skills
 
-Composable Agent Skills for spec-driven work: an AppSec pair, a plain-language companion for that pair, a delivery gate after implement (`dvd-tests`: Drive, Verify, Deliver), and a read-only orientation trio (`explain-product`, `explain-code`, `explain-infra`). The published GitHub repository is `daviduartedev/skills`.
+Composable Agent Skills for spec-driven work: an AppSec pair, a plain-language companion for that pair, a runner from a settled grill to commits (`grill-to-ship`), a delivery gate after implement (`dvd-tests`: Drive, Verify, Deliver), and a read-only orientation trio (`explain-product`, `explain-code`, `explain-infra`). The published GitHub repository is `daviduartedev/skills`.
 
 ## Language
 
@@ -19,6 +19,14 @@ _Avoid_: fourth AppSec review, course, rewrite of the AppSec file
 **explained companion**:
 The derived file `docs/security/<feature-slug>-explained.md`.
 _Avoid_: source of truth, `SEC-*` register, AppSec review
+
+**grill-to-ship**:
+User-invoked runner after a grill: spec, thin tickets, prototype approval per screen, one implement commit per ticket, then `dvd-tests`, each behind a human gate.
+_Avoid_: re-interviewing settled decisions, pushing or opening a pull request unasked, a second orchestrator
+
+**thin**:
+One decision per spec story, one behaviour per ticket, one ticket per commit.
+_Avoid_: coarse ticket, multi-ticket commit
 
 **dvd-tests**:
 Delivery gate after implement: local run, browser Drive, printed E2E results, then an unchecked human-observable smoke checklist.
